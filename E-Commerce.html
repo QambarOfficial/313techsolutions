@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>E-Commerce | Tech Solutions</title>
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/lineicons.css" />
+  <link rel="stylesheet" href="assets/css/tiny-slider.css" />
+  <link rel="stylesheet" href="assets/css/glightbox.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="page-loader"><div class="spinner"></div></div>
+  <div id="navbar-container"></div>
+
+  <section class="header-area header-eight team-hero">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-12 text-center">
+          <h1>E-Commerce Solutions</h1>
+          <p>Power your business with scalable and innovative online commerce platforms.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="services-area services-eight team-section">
+    <div class="container">
+      <div class="section-title-five text-center">
+        <h6>Our Offering</h6>
+        <h2 class="fw-bold">E-Commerce Development</h2>
+        <p>We deliver end-to-end commerce solutions tailored to your business goals.</p>
+      </div>
+      <!-- Add more content as needed -->
+    </div>
+  </section>
+
+  <div id="footer-container"></div>
+  <script src="components.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/glightbox.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/tiny-slider.js"></script>
+  <script>
+  // Hide the page loader after window loads
+  window.addEventListener('load', () => {
+    const loader = document.getElementById('page-loader');
+    if (loader) {
+      loader.style.opacity = '0';
+      setTimeout(() => {
+        loader.style.display = 'none';
+      }, 400);
+    }
+  });
+</script>
+
+</body>
+</html>

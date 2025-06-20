@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="description" content="Explore exciting career opportunities at Tech Solutions" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <title>Careers | Tech Solutions</title>
+
+  <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/png" />
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/lineicons.css" />
+  <link rel="stylesheet" href="assets/css/tiny-slider.css" />
+  <link rel="stylesheet" href="assets/css/glightbox.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+     <div id="page-loader">
+    <div class="spinner"></div>
+  </div>
+  <!-- Load navbar -->
+  <div id="navbar-container"></div>
+
+  <!--====== CAREERS HERO SECTION START ======-->
+  <section class="header-area header-eight team-hero">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 col-md-12">
+          <div class="header-content">
+            <h1>Join Our Team</h1>
+            <p>Be part of a growing company that's making a real impact in the tech world. Explore open positions and grow your career with us.</p>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12">
+          <div class="header-image">
+            <img src="assets/images/team/20.jpg" alt="Join our team" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--====== CAREERS HERO SECTION END ======-->
+
+  <!--====== OPEN POSITIONS SECTION START ======-->
+  <section class="services-area services-eight team-section">
+    <div class="container">
+      <div class="row mb-5 text-center">
+        <div class="col-lg-12">
+          <div class="section-title-five">
+            <h6>Careers</h6>
+            <h2 class="fw-bold">Open Positions</h2>
+            <p>Find your next opportunity at Tech Solutions</p>
+          </div>
+        </div>
+      </div>
+      <div class="row g-4">
+        <!-- Sample Job Card -->
+        <div class="col-lg-4 col-md-6">
+          <div class="single-team">
+            <div class="team-content">
+              <h4>Frontend Developer</h4>
+              <p>React / Vue · 2+ years experience</p>
+              <div class="team-bio">
+                <p>We’re seeking a frontend developer with a passion for responsive design and dynamic interfaces.</p>
+              </div>
+              <a href="#" class="btn btn-sm primary-btn-outline mt-2">Apply Now</a>
+            </div>
+          </div>
+        </div>
+        <!-- Repeat for other positions -->
+        <div class="col-lg-4 col-md-6">
+          <div class="single-team">
+            <div class="team-content">
+              <h4>Backend Developer</h4>
+              <p>Node.js / Python · 3+ years experience</p>
+              <div class="team-bio">
+                <p>Looking for someone to build scalable APIs and cloud services.</p>
+              </div>
+              <a href="#" class="btn btn-sm primary-btn-outline mt-2">Apply Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="single-team">
+            <div class="team-content">
+              <h4>Product Manager</h4>
+              <p>Agile · 5+ years experience</p>
+              <div class="team-bio">
+                <p>Lead cross-functional teams to deliver tech solutions that delight users.</p>
+              </div>
+              <a href="#" class="btn btn-sm primary-btn-outline mt-2">Apply Now</a>
+            </div>
+          </div>
+        </div>
+        <!-- Add more roles as needed -->
+      </div>
+    </div>
+  </section>
+  <!--====== OPEN POSITIONS SECTION END ======-->
+
+  <!-- Footer -->
+  <div id="footer-container"></div>
+
+  <!-- Scripts -->
+  <script src="components.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/glightbox.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/tiny-slider.js"></script>
+
+  <script>
+    // animation
+    window.addEventListener('load', () => {
+      const loader = document.getElementById('page-loader');
+      if (loader) {
+        loader.style.opacity = '0';
+        setTimeout(() => {
+          loader.style.display = 'none';
+        }, 400);
+      }
+    });
+    // Set active link for Careers
+    document.addEventListener('DOMContentLoaded', function () {
+      const currentPage = window.location.pathname.split('/').pop();
+      if (currentPage === 'careers.html') {
+        const links = document.querySelectorAll('[href="careers.html"]');
+        links.forEach(link => link.classList.add('active'));
+      }
+    });
+  </script>
+</body>
+
+</html>
